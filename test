@@ -1,0 +1,47 @@
+allCardList = allCardList.map(item => {
+                if (cart.tel == item.tel) {
+                    return {
+                        ...item,
+                        cartList:[
+                            ...item.cartList,
+                            cart.cartList
+                        ]
+                    };
+                } else {
+                    return item;
+                }
+            });
+
+
+
+
+            // app.post('/api/cartlist', (req, res) => {
+            //     let cart = req.body;
+            //     //console.log(2,cart);
+            //     let userCart;
+            //     // console.log(cart,'000');
+            //     getCartList(data => {
+            //         let cartList = JSON.parse(data);
+            //         console.log(111111,cartList);
+            //         if (!cartList) cartList = [];
+            //         cartList = cartList.map(item => {
+            //             if (cart.tel == item.tel) {
+            //                 return {
+            //                     ...cart
+            //                 };
+            //             } else {
+            //                 return item;
+            //             }
+            //         });
+            //         //console.log(2222,cartList);
+            //         let index  = cartList.findIndex(item => item.tel == cart.tel);
+            //         // console.log(333,userCart);
+            //         if (index == -1) {
+            //             cartList.push(cart);
+            //         }else{
+            //             cartList.splice(index,1,cart);
+            //         }
+            //         addCart(cartList, {code: 200, data: {...userCart}}, data => res.send(data))
+            //     });
+            //
+            // });

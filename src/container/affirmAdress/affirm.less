@@ -1,0 +1,122 @@
+.page-panel{
+  width:100%;
+  position: fixed;
+  top:4.5rem;
+  left:0;
+  bottom:0;
+  right:0;
+  background:#efefef;
+  z-index: 99;
+  .panel-position{
+    height:4.5rem;
+    background:#fff;
+    width:100%;
+    border-top:1px solid #e0e0e0;
+    color:#555;
+    text-align: center;
+    line-height: 4.5rem;
+    font-size:2.8rem;
+    position: relative;
+    i{
+      top:.1rem;
+      left:6.5rem;
+      position: absolute;
+      color:#ffd600;
+      font-size:6rem;
+    }
+  }
+  .info-list{
+    margin-top: 1rem;
+    background: #fff;
+    overflow-y: scroll;
+    position: fixed;
+    top: 9rem;
+    bottom: 6rem;
+    left: 0;
+    width: 100%;
+    .info-item{
+      position: relative;
+      height:8rem;
+      border-color:#ffd600;
+      border-bottom: 1px solid #e0e0e0;
+
+      .info-detail{
+        font-size:2.8rem;
+        position: absolute;
+        top:.5rem;
+        right:8rem;
+        bottom:.5rem;
+        left:0rem;
+        padding-top:.7rem;
+        padding-left:1rem;
+        border-left: solid .5rem transparent;
+        line-height:2.8rem;
+
+        .p2{
+          color:#999;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      .info-change{
+        position: absolute;
+        width:8rem;
+        right:0;
+        text-align: center;
+        line-height:8rem;
+
+
+        i{
+          border-left: 1px solid #e0e0e0;
+          font-size:5rem;
+          padding:1.5rem 0 1.5rem 1.8rem;
+          color:#555;
+
+
+        }
+      }
+      &.active{
+        .info-detail{
+          border-left-color: #ffd600;
+        }
+    }
+
+
+    }
+  }
+  .add-btn{
+    position:fixed;
+    left:0;
+    bottom:0;
+    height:5rem;
+    background:#fff;
+    width:100%;
+    .btn{
+      color: #000;
+      background-color: #ffd600;
+      border-radius: .5rem;
+      margin: .9rem 20%;
+      height: 3.7rem;
+      line-height: 3.7rem;
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+  .none-adress{
+    display: block;
+    text-align: center;
+    line-height: 18rem;
+    font-size:4rem;
+    color: #999;
+  }
+}
+.affirm-header{
+  i{
+    position: absolute;
+    top:.2rem;
+    left:.5rem;
+    font-size:5rem;
+    color:#555;
+  }
+}

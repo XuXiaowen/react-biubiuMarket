@@ -1,0 +1,20 @@
+[
+  {
+    "userId":1,
+    "username":"乔三三",
+    "userPhone":18610304990,
+    "addressList":[
+      {"addressId":1,"sex":"0","city":"北京","region":"昌平区","adress":"霍营东大街","receiverPhone":18610304990,"receiverName":"乔三三"},
+      {"addressId":2,"sex":"1","adress":"霍营西大街","city":"上海","region":"浦东区","receiverPhone":18610304991,"receiverName":"乔思思"}
+    ]
+  },
+  {
+    "userId":2,
+    "username":"常晓艳",
+    "userPhone":18600697579,
+    "addressList":[
+      {"addressId":1,"sex":"0","city":"北京","region":"昌平区","adress":"回龙观东大街","receiverPhone":18600697579,"receiverName":"常晓艳"},
+      {"addressId":2,"sex":"1","adress":"回龙观西大街","city":"上海","region":"浦东区","receiverPhone":18600697578,"receiverName":"李凯丽"}
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+
+  [
+    {
+      "tel": "222222222222",
+      "cartList": [
+        {
+          "goodsid": "1",
+          "subtypeid": "0",
+          "name": "可爱多巧克力",
+          "img": "http://img01.bqstatic.com/upload/goods/201/607/1910/20160719105218_794198.jpg@200w_200h_90Q",
+          "unit": "80g",
+          "price": 8,
+          "count": 4,
+          "total": "10",
+          "isShow": false
+        },
+        {
+          "goodsid": "2",
+          "subtypeid": "0",
+          "name": "菲律宾进口香蕉",
+          "img": "http://img01.bqstatic.com/upload/goods/201/707/0417/20170704171250_891905.jpg@200w_200h_90Q",
+          "unit": "550g以上/袋",
+          "price": 11.8,
+          "count": 4,
+          "total": "10",
+          "isShow": false
+        },
+        {
+          "goodsid": "3",
+          "subtypeid": "0",
+          "name": "麻辣吃货龙虾尾",
+          "img": "http://img01.bqstatic.com/upload/goods/201/705/1611/20170516115641_717926.jpg@200w_200h_90Q",
+          "unit": "80g",
+          "price": 25,
+          "count": 5,
+          "total": "10",
+          "isShow": false
+        },
+        {
+          "goodsid": "11",
+          "subtypeid": "1",
+          "name": "麻辣吃货鸭头",
+          "img": "http://img01.bqstatic.com/upload/goods/201/710/3118/20171031180030_567051.jpg@200w_200h_90Q",
+          "unit": "80g",
+          "price": 8,
+          "count": 1,
+          "total": "10",
+          "isShow": false
+        }
+      ]
+    },
+    {
+      "tel": 22222222222,
+      "cartList": [
+        {
+          "goodsid": "1",
+          "subtypeid": "0",
+          "name": "可爱多巧克力",
+          "img": "http://img01.bqstatic.com/upload/goods/201/607/1910/20160719105218_794198.jpg@200w_200h_90Q",
+          "unit": "80g",
+          "price": 8,
+          "count": 6,
+          "total": "10",
+          "isShow": true
+        },
+        {
+          "goodsid": "2",
+          "subtypeid": "0",
+          "name": "菲律宾进口香蕉",
+          "img": "http://img01.bqstatic.com/upload/goods/201/707/0417/20170704171250_891905.jpg@200w_200h_90Q",
+          "unit": "550g以上/袋",
+          "price": 11.8,
+          "count": 3,
+          "total": "10",
+          "isShow": true
+        },
+        {
+          "goodsid": "3",
+          "subtypeid": "0",
+          "name": "麻辣吃货龙虾尾",
+          "img": "http://img01.bqstatic.com/upload/goods/201/705/1611/20170516115641_717926.jpg@200w_200h_90Q",
+          "unit": "80g",
+          "price": 25,
+          "count": 1,
+          "total": "10",
+          "isShow": true
+        },
+        {
+          "goodsid": "11",
+          "subtypeid": "1",
+          "name": "麻辣吃货鸭头",
+          "img": "http://img01.bqstatic.com/upload/goods/201/710/3118/20171031180030_567051.jpg@200w_200h_90Q",
+          "unit": "80g",
+          "price": 8,
+          "count": 1,
+          "total": "10",
+          "isShow": true
+        }
+      ]
+    }
+  ]
+

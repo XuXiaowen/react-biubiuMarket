@@ -1,0 +1,20 @@
+所有返回 code
+    0 成功
+    1 失败
+1. 获取超市数据
+    URL : /marget
+    参数
+    返回   {
+          code: 0,
+          msg: 'success',
+          data: JSON.parse(data)
+          };
+1. 注册
+    URL : /signUp
+    参数: { name:'xxx',age:25}
+    返回 ;{code:0,success:'注册成功'}
+2 登录
+    URL : /login
+    参数 ;  {name:'xxx',age:25}
+    返回  ;{code:0,success:"hi~欢迎回来"}
+3

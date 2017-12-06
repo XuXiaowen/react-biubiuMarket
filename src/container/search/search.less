@@ -1,0 +1,256 @@
+.search {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  .footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    left: 0;
+    z-index: 100;
+    background-color: #efefef !important;
+    border-top: none !important;
+  }
+  .searchHeader {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    background: #f9fafd;
+    border-bottom: 1px solid #dfdfdf;
+    text-align: center;
+    .back {
+      display: inline-block;
+      width: 10%;
+      position: absolute;
+      left: .5rem;
+      font-weight: 700;
+      font-size: 4rem;
+      color: #c2c2c2;
+    }
+
+    .searchInp {
+      position: relative;
+      margin-left: -1rem;
+      display: inline-block;
+      background: #f1f1f1;
+      border-radius: .5rem;
+      height: 3rem;
+      line-height: 3rem;
+      vertical-align: middle;
+
+      .icon-sousuo1 {
+        font-size: 4rem;
+        margin: 0 .7rem;
+        color: #d6d6d6;
+        font-weight: 600;
+      }
+      input {
+        border: 0;
+        font-size: 3rem;
+        background-color: transparent;
+        color: #999;
+      }
+      .icon-quxiao {
+        position: absolute;
+        font-size: 4rem;
+        right: 1rem;
+        color: #d6d6d6;
+      }
+    }
+
+    .sure {
+      position: absolute;
+      width: 10%;
+      right: 1rem;
+      font-size: 3rem;
+      color: orange;
+    }
+  }
+
+  .hotSearch p, .history p {
+    padding-left: 1rem;
+    line-height: 3.5rem;
+    color: #8d8d8d;
+    background: #f7f7f7;
+  }
+
+  .hotSearch {
+    margin-top: 4.5rem;
+    .hotList {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      background-color: #fbfbfb;
+      justify-content: center;
+      align-items: center;
+      padding: .5rem 0;
+      a {
+        display: block;
+      }
+      li {
+        box-sizing: border-box;
+        width: 32.5%;
+        padding: .5rem 1rem;
+        text-align: center;
+        color: #727272;
+        span {
+          display: block;
+          height: 3rem;
+          line-height: 3rem;
+          background: #ffff56;
+          border-radius: 2rem;
+          color: #818181;
+        }
+      }
+    }
+
+    .unsee {
+      background: none;
+    }
+  }
+
+  .history {
+    width: 100%;
+    background-color: #fbfbfb;
+    .hotList {
+      li {
+        height: 3rem;
+        line-height: 3rem;
+        border-bottom: 1px solid #eeeeee;
+        margin: 0 1rem;
+        color: #a2a2a2;
+        span {
+          margin-left: 1rem;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+        i {
+          position: absolute;
+          right: 2rem;
+          font-size: 2rem;
+          color: #ccc;
+        }
+      }
+
+    }
+  }
+
+  .historyCode{
+    z-index: -1;
+  }
+
+  .clearBtn {
+    bottom: 10rem;
+    display: block;
+    margin: 2rem auto;
+    width: 7rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #f9f9f9;
+    color: #ccc;
+  }
+
+  .items {
+    position: absolute;
+    top: 4.5rem;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    li {
+      position: relative;
+      display: flex;
+      box-sizing: border-box;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 .5rem;
+      margin: 1rem 0;
+      width: 50%;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      a{
+        display: block;
+        width: 100%;
+      }
+      .red{
+        color: #ff3800;
+      }
+      .proName {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #353d44;
+      }
+      .proImg {
+        display: block;
+        padding-bottom: 100%;
+        width: 100%;
+      }
+      &:nth-child(2) {
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+      }
+      .weiInfo {
+        font-size: .8rem;
+        color: #747474;
+      }
+      .add {
+        position: absolute;
+        bottom: .7rem;
+        right: .7rem;
+        width: 2.5rem;
+        border: 1px solid #cbcbcb;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 2.5rem;
+
+        i {
+          display: block;
+          width: 2.5rem;
+          height: 2.5rem;
+          line-height: 2.4rem;
+          font-size: 3.5rem;
+          font-weight: bold;
+          color: #ff3800;
+          &:active{
+            font-size: 5rem;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.failSearch {
+  text-align: center;
+  font-size: 1.7rem;
+  .zai {
+    display: block;
+    margin: 2rem auto;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: #f1e50d;
+    vertical-align: middle;
+    a {
+      font-size: 3rem;
+      line-height: 3rem;
+      color: #fff;
+    }
+  }
+
+}
+

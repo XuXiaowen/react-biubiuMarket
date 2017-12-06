@@ -1,0 +1,152 @@
+
+.searchHeader {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background: #f9fafd;
+  border-bottom: 1px solid #dfdfdf;
+  text-align: center;
+
+  .back {
+    display: inline-block;
+    width: 10%;
+    position: absolute;
+    left: .5rem;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #c2c2c2;
+  }
+}
+
+.detail {
+  width: 100%;
+  margin-top: 4.5rem;
+  .mainDetail {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    .proImg {
+      margin: 0 auto;
+      width: 60%;
+      padding-bottom: 60%;
+    }
+    .proName, .bPrice1 {
+      text-align: center;
+      font-size: 3.5rem;
+      color: #292d33;
+    }
+    .bPrice1 {
+      font-size: 3rem;
+      line-height: 3rem;
+      color: #f40;
+    }
+  }
+
+  .line1, line2 {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+
+  }
+  .pp, .gg {
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+  }
+}
+
+.det {
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 1rem 0;
+}
+
+.title {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #e0bd6a;
+  background: url("http://m.beequick.cn/static/bee/img/phone/pages/productDetail/title_bg-6dc6dfc1.png") no-repeat center;
+  background-size: auto .2rem;
+}
+
+.bigPic {
+  width: 100%;
+  margin-top: 1rem;
+  padding-bottom: 800%;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 5rem;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  z-index: 10;
+  background: #fff !important;
+  border-top: 1px solid #e0e0e0 !important;
+
+  .col {
+    position: absolute;
+    left: 1rem;
+    top:.7rem;
+    width: 3rem;
+    height: 5rem;
+    vertical-align: middle;
+    text-align: center;
+    i{
+      font-size: 4.5rem;
+    }
+  }
+
+  .addGoods{
+    margin-left: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    span{
+      margin: 0 .3rem ;
+    }
+    i{
+      font-size: 5rem;
+      color:#ff3800;
+      &:active{
+        font-size: 5rem;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .addCart {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: 5.4rem;
+    height: 5.4rem;
+
+    .cartBtn {
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABuCAMAAADxhdbJAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAHFUExURUxpcf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////74HNBAAAACWdFJOUwCwEOygcNBggJAEwJwFJFDw8qR+MBv+4ItLAuT9A8zfQNxUKAaOPSxmRA72+/UBjOpVM1P5a+jDZKgmtTe+F0rYZaLxDwmIXAdXbCB0cdHpjWhuuazPeK0MxdccW28+98djVnmWl0Lte11BPy+yE/xyttmYHvTORQsSxIYiMRmn83bUgrgNdSmULoHbNJIVZ5tZ3vq/61CyaTYAAAKJSURBVGje7dlnVxNBFAbgJQklMT3BJCIkKEWqghRpIh3B3pVi7733DvZe9vc6m03xgwve927m6Dnzfp6T52x25u7MHU1TUVFRUVFRUeGkzanreii5ED/jk8EZmhlnZKzwXIuez3t/wbm5jt+8LZ7CP98qx/3euqFwyPDmpc0ZR5XgZuXN0S+CeyWPiwtubymSwVGA26bDafpM59bojGwkc+0croTMLXK4lfR/s4LBjdC5HwxugM6dZnBxOredwbXRuQSDe0Ln/LhWDZQVTzPMeZGqeQPmJhDuMszNINwuVEtCn6B1KOeCuAsoVwpx5Sg3jX3Qn2FaDNw/7Jf56jStB+M2gdxLjEM33+chrQLd+32AuDDKNUp9deB2ZS3MDQBaF75xfwNwPTi3B+B241yD1Fen3aJrGzinrttkbh+Hu0PmpjhcmMzVc7gIVfvZyuHIZ8qDrAP6WypXzOImVxO5KK//8I2mdbfyuD5jx//XLY5ADbO7Uiu4cXnNHGMnXSSPuyi4I/K4zYJr9sjzgsLrPySNO5bpywSDsViyRGSFSJGIKx2v28x4WTrn7jI5F3GdJ3jcEJFbz+wVn+yuDhJK2VZ7GtRXpv3R9lQqlQgEApkaMlWczvOyTB663bVf1VXMP5ax172Vy1SfS5/swkZPtej62cgSd1ANxqXDg357LjBemFP8uuUDTpgL5fugHZw3u6SuWTVEmrKXYg6+du9o7gbKYsSB3Bo/zuce5yvG5J9HPM0N+Mjn6vPdeovv3rBdBdOIbyT7Y1UWIzpz3Akbpsq75apv485sT7jGBs7XZ/6Y23JEXcg82kVtWXiVnTuudhxe6hbp0bBT77pZrsqvioqKioqKyn+dX7jWs9PYCXZZAAAAAElFTkSuQmCC") no-repeat #ffd600;
+      width: 100%;
+      border-radius: 50%;
+      border: solid .3rem #f7f7f7;
+      padding-bottom: 100%;
+      background-size: 100%;
+      .goodsNum{
+        position: absolute;
+        top:-.5rem;
+        right: -.5rem;
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        font-size: 1rem;
+        color: #fff;
+        border-radius: 50%;
+        background: red;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,41 @@
+/*侧边栏*/
+.mar-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background: #f8f8f8;
+  overflow: hidden;
+  .side-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*侧边栏li*/
+    .side-item {
+      position: relative;
+      text-align: center;
+      line-height: 4rem;
+      font-size: 2.2rem;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e0e0e0;
+      &:first-child{
+        background: url("../../../static/20170518150234_075444.jpg") top right no-repeat;
+        background-size: 2.5rem;
+      }
+    }
+    .active {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3.5rem;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        border-left: .5rem solid #ffd600;
+      }
+    }
+  }
+}

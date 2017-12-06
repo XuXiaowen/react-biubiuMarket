@@ -1,0 +1,100 @@
+.block {
+  background-color: #fff;
+  color: #353d44;
+  margin-bottom: 1rem;
+
+  .blockHeader {
+    height: 2rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    padding: 1rem;
+    font-size: 1.2rem;
+    .blockTitle{
+      float: left;
+      padding-left:.5rem;
+      border-left: .7rem solid #E80013;
+    }
+    .more{
+      float: right;
+      a{
+        display: block;
+        color: #999;
+      }
+    }
+  }
+  .banner{
+    margin: 0 1rem;
+    a{
+      display: block;
+
+      padding-bottom: 28%;
+    }
+  }
+  .items{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding:0 .5rem 1rem .5rem;
+    li {
+      position: relative;
+      display: flex;
+      box-sizing: border-box;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 .5rem;
+      width: 33.33%;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      .red{
+        color: #ff3800;
+      }
+      a {
+        display: block;
+        color: #353d44;
+        width: 100%;
+        p {
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .proImg {
+          display: block;
+          padding-bottom: 100%;
+          width: 100%;
+        }
+        &:nth-child(2) {
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+        .weiInfo {
+          font-size: .8rem;
+          color: #747474;
+        }
+        .add {
+          position: absolute;
+          bottom: .7rem;
+          right: .7rem;
+          width: 2.5rem;
+          border: 1px solid #cbcbcb;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 2.5rem;
+
+          i {
+            display: block;
+            width: 2.5rem;
+            height: 2.5rem;
+            line-height: 2.4rem;
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #ff3800;
+          }
+        }
+      }
+    }
+  }
+}
