@@ -69,13 +69,14 @@ export default class BlockDetail extends Component {
       <div className="item">
         <Header>
           <div>
-            <div className="searchHeader">
-              <div className="back" onClick={() => {
-                this.props.history.go(-1);
-              }}>
-                <i className="iconfont icon-mjiantou-copy"/>
-              </div>
-              <div className="page-header">{proName}</div>
+
+            <div className="page-header">
+              <i className="iconfont icon-mjiantou-copy"
+                 onClick={() => {
+                   this.props.history.go(-1);
+                 }}/>
+              {proName}
+
             </div>
           </div>
 
@@ -133,11 +134,11 @@ export default class BlockDetail extends Component {
               <i
                 className={this.state.className}
                 onClick={this.changeCol}
-                style={{color:this.state.colColor}}
+                style={{color: this.state.colColor}}
               ></i></p>
             <p
               onClick={this.changeCol}
-              style={{color:this.state.colColor}}
+              style={{color: this.state.colColor}}
             >收藏</p>
           </a>
           <div className="addGoods">

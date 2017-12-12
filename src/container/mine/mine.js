@@ -5,29 +5,48 @@ export default class Mine extends Component {
   constructor(){
     super();
     this.state={
-      telephone:null
+      telephone:null,
+      url:'', //图片地址
+      file: ''
     }
   }
 
   componentDidMount(){
     let personInfo = JSON.parse(localStorage.getItem('userInfo'));
     let phone=JSON.parse(localStorage.getItem('userInfo')).user.userPhone;
+    let compile = JSON.parse(localStorage.getItem('compile'));
+    if (compile) {
+      this.$title.value = compile.title;
+      this.$title.focus();
+      this.setState({...compile});
+      if (compile.url) {
+        this.$img.src = compile.url;
+        this.$img.style.display = 'block';
+      }
+    }
     this.setState({
       telephone:phone
     })
 
   }
 
+  handleClick = () => {
+    let url = window.URL.createObjectURL(this.$file.files[0]);
+    this.$img.src = url;
+    this.$img.style.display = 'block';
+    this.setState({url});
+  };
+
   render() {
     return (
 
       <div className="mine-main">
-
         <div className="user-Info" >
-          {/*  <Link >*/}
           <div className="user">
             <div className="user-picture">
-              <i className="iconfont icon-ren"></i>
+              <img ref={img => this.$img = img}
+                   src="" alt=""/>
+              <input onChange={this.handleClick} type="file" ref={input => this.$file = input}/>
             </div>
             <div className="user-self">
               <p className="user-phone">{this.state.telephone}</p>
@@ -48,14 +67,11 @@ export default class Mine extends Component {
           </div>
           <span></span>
           <div className="store">
-            <i className="iconfont icon-dianpu">
-
-            </i>
+            <i className="iconfont icon-dianpu"></i>
             店铺收藏
           </div>
         </div>
         <div className="mine-content">
-
           <div className="mine-order">
             我的订单
             <span>查看全部订单&gt;</span>
@@ -97,7 +113,6 @@ export default class Mine extends Component {
               <i className="iconfont icon-bao"></i>
               客服/反馈
             </li>
-
             <li>
               <i className="iconfont icon-bao"></i>
               关于我们
@@ -106,13 +121,8 @@ export default class Mine extends Component {
           <div className="mine-quit" >
             退出当前账号
           </div>
-
         </div>
-
-
       </div>
-
-
     )
   }
 }

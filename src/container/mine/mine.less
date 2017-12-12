@@ -22,17 +22,31 @@
       font-weight: 700;
       color: #fff;
       .user-picture {
+        position: relative;
         width: 6rem;
         height: 6rem;
         line-height: 6rem;
         text-align: center;
         border-radius: 50%;
-        background-color: #fff;
+        background: url("../../images/headImg.png") no-repeat;
+        background-size: cover;
         i {
+          position: absolute;
+          left: 1rem;
           font-size: 10rem;
           color: #e0e0e0;
         }
-
+        img {
+          position: absolute;
+          width: 6rem;
+          border-radius: 50%;
+        }
+        input{
+          width: 6rem;
+          height: 6rem;
+          line-height: 6rem;
+          opacity: 0;
+        }
       }
       .user-self {
         position: absolute;
@@ -76,6 +90,7 @@
       }
 
     }
+
   }
   .user-theme {
     display: flex;
@@ -132,17 +147,17 @@
         line-height: 3rem;
         font-size: 2.5rem;
         border-bottom: solid 1px #EFEFEF;
-        a{
+        a {
           display: flex;
           flex-direction: column;
-          color:inherit;
+          color: inherit;
         }
       }
 
     }
-    .mine-quit{
+    .mine-quit {
       background-color: #fff;
-      height:5rem;
+      height: 5rem;
       font-size: 2.8rem;
       line-height: 5rem;
       text-align: center;

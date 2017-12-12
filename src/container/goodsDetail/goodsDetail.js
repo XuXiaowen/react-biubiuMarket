@@ -25,13 +25,15 @@ class GoodsDetail extends Component {
 
           <Header>
             <div>
-              <div className="searchHeader">
-                <div className="back" onClick={() => {
-                  this.props.history.go(-1);
-                }}>
-                  <i className="iconfont icon-mjiantou-copy"/>
+              <div>
+
+                <div className="page-header">
+                  <i className="iconfont icon-mjiantou-copy"
+                     onClick={() => {
+                       this.props.history.go(-1);
+                     }}/>
+                  水果界最有人气的果子
                 </div>
-                <div className="page-header">水果界最有人气的果子</div>
               </div>
             </div>
           </Header>
@@ -53,7 +55,7 @@ class GoodsDetail extends Component {
                 backgroundImage: 'url("http://img01.bqstatic.com/upload/activity/theme_header_1506097859_22004_1.jpg@90Q")',
                 backgroundSize: "100%",
                 backgroundRepeat: "no-repeat",
-                paddingBottom:'6%'
+                paddingBottom: '6%'
               }}
             >
             </div>
@@ -103,7 +105,7 @@ class GoodsDetail extends Component {
                 backgroundImage: 'url("http://img01.bqstatic.com/upload/activity/theme_header_1506098134_22004_5.jpg@90Q")',
                 backgroundSize: "100%",
                 backgroundRepeat: "no-repeat",
-                paddingBottom:"6%"
+                paddingBottom: "6%"
               }}
             >
 
@@ -123,13 +125,14 @@ class GoodsDetail extends Component {
         <div>
           <Header>
             <div>
-              <div className="searchHeader">
-                <div className="back" onClick={() => {
-                  this.props.history.go(-1);
-                }}>
-                  <i className="iconfont icon-mjiantou-copy"/>
+              <div>
+                <div className="page-header">
+                  <i className="iconfont icon-mjiantou-copy"
+                     onClick={() => {
+                       this.props.history.go(-1);
+                     }}/>
+                  美国进口坚果-科克兰
                 </div>
-                <div className="page-header">美国进口坚果-科克兰</div>
               </div>
             </div>
           </Header>
