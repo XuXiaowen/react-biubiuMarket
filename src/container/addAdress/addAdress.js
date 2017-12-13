@@ -141,9 +141,11 @@ import Dialog from "../../components/dialog/dialog";
                 {this.state.isShow?<Dialog dialog={dialog}/>:null}
                 <Header>
                     <div className="page-header adress-header">
-                        <Link to="/affirm">
-                            <i className="iconfont icon-mjiantou-copy"></i>
-                        </Link>
+                        <div className="back" onClick={() => {
+                          this.props.history.go(-1)
+                        }}>
+                            <i className="iconfont icon-mjiantou-copy"/>
+                        </div>
                         增加地址
                     </div>
                 </Header>

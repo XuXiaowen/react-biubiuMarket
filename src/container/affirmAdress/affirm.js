@@ -70,7 +70,7 @@ import {Link} from 'react-router-dom'
                 {this.state.isShow ? <Dialog dialog={dialog}/> : null}
                 <Header>
                     <div className="page-header affirm-header">选择地址
-                        <Link to="/home">
+                        <Link to="/cart">
                             <i className="iconfont icon-mjiantou-copy"></i>
                         </Link>
                     </div>

@@ -50,11 +50,11 @@ export default class Mine extends Component {
             </div>
             <div className="user-self">
               <p className="user-phone">{this.state.telephone}</p>
-              <p className="user-lever"><i className="iconfont icon-medal">
-              </i>
+              <p className="user-lever">
+                <i className="iconfont icon-medal"></i>
               </p>
+              <span><i className="iconfont icon-iconfontxiangxia1copy19"></i></span>
             </div>
-            <p className="more">&gt;</p>
           </div>
           {/* </Link>
            */}
@@ -78,43 +78,43 @@ export default class Mine extends Component {
           </div>
           <ul className="mine-type">
             <li>
-              <i className="iconfont icon-bao"></i>
+              <i className="iconfont icon-daifukuan1"></i>
               待付款
             </li>
             <li>
-              <i className="iconfont icon-bao"></i>
+              <i className="iconfont icon-daishouhuo1"></i>
               待收货
             </li>
             <li>
-              <i className="iconfont icon-bao"></i>
+              <i className="iconfont icon-31daipingjia"></i>
               待评价
             </li>
             <li>
-              <i className="iconfont icon-bao"></i>
+              <i className="iconfont icon-tuikuan-copy"></i>
               退款/售后
             </li>
           </ul>
           <ul>
             <li>
-              <i className="iconfont icon-bao"></i>
+              <i className="iconfont icon-jifen"></i>
               积分商城
             </li>
             <li>
-              <i className="iconfont icon-bao"></i>
+              <i className="iconfont icon-youhuiquan"></i>
               优惠券
             </li>
             <li>
               <Link to='/affirm'>
-                <i className="iconfont icon-bao"></i>
+                <i className="iconfont icon-shouhuodizhi"></i>
                 收货地址
               </Link>
             </li>
             <li>
-              <i className="iconfont icon-bao"></i>
+              <i className="iconfont icon-kefu"></i>
               客服/反馈
             </li>
             <li>
-              <i className="iconfont icon-bao"></i>
+              <i className="iconfont icon-guanyuwomen"></i>
               关于我们
             </li>
           </ul>

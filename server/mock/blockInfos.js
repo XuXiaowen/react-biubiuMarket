@@ -197,7 +197,7 @@ module.exports = {
         bPrice1: "8",
       },
       {
-        tag: ['进口','坚果'],
+        tag: ['F进口','坚果'],
         proName: "美国科克兰盐烤混合坚果",
         proImg: "http://img01.bqstatic.com/upload/goods/201/708/0414/20170804143427_356348.jpg@200w_200h_90Q",
         weiInfo: "1130g",

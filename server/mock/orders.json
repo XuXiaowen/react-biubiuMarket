@@ -1,4 +1,13 @@
 //订单信息
 [
-  {"id":10000,"price":"99","address":"xxxx","userName":"longfei","payList":[{}],"phone":"18844108386"}
+  {
+    "id": 10000,
+    "price": "99",
+    "address": "xxxx",
+    "userName": "longfei",
+    "payList": [
+      {}
+    ],
+    "phone": "18844108386"
+  }
 ]

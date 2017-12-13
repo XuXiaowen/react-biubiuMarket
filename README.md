@@ -44,7 +44,7 @@
 ## 项目预览
 
 ![Image text](http://chuantu.biz/t6/158/1511680542x-1404817507.gif)
-
+![Image text]()
 ***
 ## 文件目录结构
 

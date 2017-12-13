@@ -145,9 +145,11 @@ class ModifiAdress extends Component {
                 {this.state.isShow ? <Dialog dialog={dialog}/> : null}
                 <Header>
                     <div className="page-header modifi-header">
-                        <Link to="/affirm">
-                            <i className="iconfont icon-mjiantou-copy"></i>
-                        </Link>
+                        <div className="back" onClick={() => {
+                          this.props.history.go(-1)
+                        }}>
+                            <i className="iconfont icon-mjiantou-copy"/>
+                        </div>
                         修改地址
                         <span className="s1" onClick={this.modifiBtn}>保存</span>
                     </div>

@@ -392,7 +392,7 @@ class Cart extends Component {
                 {this.state.address ? d : (<div className="mar-wrapper">
                     <img className="positionImg" src="../../../static/empty_addrlist-7b6725e9.png"/>
                     <div className="positionInfo">
-                        <span>还没有收货地址哦~~~~</span>
+                        <span>还没有收货地址哦</span>
                         <Link to='/affirm'>
                             <div className="btn">点击增加地址</div>
                         </Link>
